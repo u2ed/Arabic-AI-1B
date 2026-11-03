@@ -1,4 +1,4 @@
-name = "arabic-ai-1b--44"
+name = 'arabic-ai-1b-44'
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 
