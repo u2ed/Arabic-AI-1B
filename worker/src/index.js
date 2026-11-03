@@ -12,7 +12,7 @@ export default {
       const body = await request.json();
       const messages = Array.isArray(body.messages) ? body.messages : [];
       if (!messages.length) return Response.json({ error: "messages is required" }, { status: 400, headers: corsHeaders });
-      const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
+      const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct-fast", {
         messages: [
           { role: "system", content: "أنت مساعد عربي مفيد. أجب باللغة العربية الواضحة، وكن دقيقاً ومختصراً." },
           ...messages.slice(-20)
