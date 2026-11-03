@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Arabic AI</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="mark">ع</div>
+      <div><h1>Arabic AI</h1><p>مساعدك الذكي باللغة العربية</p></div>
+      <span class="status" id="status">جاهز</span>
+    </header>
+    <section class="chat" id="chat" aria-live="polite">
+      <div class="welcome" id="welcome"><h2>أهلاً بك 👋</h2><p>اكتب رسالتك للبدء بالمحادثة.</p></div>
+    </section>
+    <form id="chat-form" class="composer">
+      <textarea id="message" rows="1" placeholder="اكتب رسالتك هنا..." required></textarea>
+      <button id="send" type="submit" aria-label="إرسال">إرسال</button>
+    </form>
+    <p class="note">نسخة تجريبية — محرك الردود قد يتوقف عند انتهاء الحصة المجانية.</p>
+  </main>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
